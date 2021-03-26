@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { Button } from './components/Button';
+import { DialogBox } from './components/DialogBox';
 import './App.css';
 
+const title = 'Sample title';
+
 function App() {
+  const [isDialogBoxShowing, setDialogBoxState] = useState(false);
+  const handleClick = () => {
+    setDialogBoxState(true);
+  };
+  const handleClose = () => {
+    setDialogBoxState(false);
+  };
+  const handleConfirm = () => {
+    alert('Confirm clicked');
+    setDialogBoxState(false);
+  };
+  const handleAbort = () => {
+    console.log('Abort clicked');
+    alert('Abort clicked');
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button handleClick={handleClick}>Click Me!</Button>
+      {isDialogBoxShowing && (
+        <DialogBox title={title} handleClose={handleClose}>
+          <Button handleClick={handleConfirm}>Confirm</Button>
+          <Button handleClick={handleAbort}>Abort</Button>
+        </DialogBox>
+      )}
     </div>
   );
 }
