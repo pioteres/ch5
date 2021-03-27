@@ -13,16 +13,16 @@ const ModalDialogBox = () => {
     setDialogBoxState(false);
   };
   const handleConfirm = () => {
-    alert('Confirm clicked');
+    console.log('Confirm clicked');
     setDialogBoxState(false);
   };
   const handleAbort = () => {
     console.log('Abort clicked');
-    alert('Abort clicked');
+    setDialogBoxState(false);
   };
   return (
     <div>
-      <Button handleClick={handleClick}>Click Me!</Button>
+      <Button handleClick={handleClick}>Show DialogBox</Button>
       {isDialogBoxShowing && (
         <DialogBox title={title} handleClose={handleClose}>
           <Button handleClick={handleConfirm}>Confirm</Button>

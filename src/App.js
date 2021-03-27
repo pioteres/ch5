@@ -6,10 +6,7 @@ import './App.css';
 
 function App() {
   const [isOpen, setOpen] = useState();
-  const handleClick = () => {
-    console.log('click');
-    setOpen(!isOpen);
-  };
+  const handleClick = () => setOpen(!isOpen);
   return (
     <div className="App">
       <div className="header">
@@ -19,7 +16,7 @@ function App() {
       </div>
       {isOpen && <Menu state={isOpen} handleClick={handleClick} />}
       <ModalDialogBox />
-      <Snackbars time={5000} type="information" position="center-top">
+      <Snackbars time={5000} type="information" position="right-bottom">
         Snackbar with some props
       </Snackbars>
     </div>

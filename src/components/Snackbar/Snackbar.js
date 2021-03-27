@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
 const Snackbar = ({ time, setActive, children, position, type }) => {
-  let top = 'auto';
-  let bottom = 'auto';
-  let left = 'auto';
-  let right = 'auto';
+  let top;
+  let bottom;
+  let left;
+  let right;
   let background = '#4caf50';
 
   switch (type) {
@@ -67,11 +67,11 @@ const Snackbar = ({ time, setActive, children, position, type }) => {
   }, [setActive, time]);
 
   return (
-    <div className="overlay">
+
       <div className="snackbar" style={styles}>
         <p>{children}</p>
       </div>
-    </div>
+
   );
 };
 
