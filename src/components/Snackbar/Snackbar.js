@@ -64,7 +64,7 @@ const Snackbar = ({ time, setActive, children, position, type }) => {
   useEffect(() => {
     const timer = setTimeout(() => setActive(false), time);
     return () => clearTimeout(timer);
-  }, []);
+  }, [setActive, time]);
 
   return (
     <div className="overlay">
