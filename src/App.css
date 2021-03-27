@@ -66,3 +66,21 @@ button {
   border: 1px solid black;
   cursor: pointer;
 }
+
+.snackbar {
+  max-width: 40vw;
+  min-width: 20vw;
+  padding: 10px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  min-height: 20px;
+  position: fixed;
+  margin: 20px;
+}
+
+.snackbar p {
+  margin: 0;
+  vertical-align: middle;
+  color: white;
+  font-weight: bolder;
+}
