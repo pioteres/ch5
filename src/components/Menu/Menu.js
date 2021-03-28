@@ -1,4 +1,5 @@
 import { Button } from '../Button';
+import { NavLink } from 'react-router-dom';
 
 const Menu = ({ state, handleClick }) => {
   return (
@@ -10,16 +11,10 @@ const Menu = ({ state, handleClick }) => {
       </div>
       <ul style={{ textAlign: 'left' }}>
         <li>
-          <a href="/">Link 1</a>
+          <NavLink to="/dialogbox" activeClassName="menu-active">DialogBox</NavLink>
         </li>
         <li>
-          <a href="/">Link 2</a>
-        </li>
-        <li>
-          <a href="/">Link 3</a>
-        </li>
-        <li>
-          <a href="/">Link 4</a>
+          <NavLink to="/snackbar" activeClassName="menu-active">Snackbar</NavLink>
         </li>
       </ul>
     </div>

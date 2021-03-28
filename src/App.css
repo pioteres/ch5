@@ -96,3 +96,7 @@ button {
   height: 100%;
   background: lightgrey;
 }
+
+.menu-active {
+  color: red;
+}
