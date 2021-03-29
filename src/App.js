@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ModalDialogBox, Snackbars } from './pages';
+import { ModalDialogBox, Snackbars, Users } from './pages';
 import { Button } from './components/Button';
 import { Menu } from './components/Menu';
 import {
@@ -29,6 +29,12 @@ function App() {
             <Snackbars time={5000} type="information" position="right-bottom">
               Snackbar with some props
             </Snackbars>
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/user-profile">
+            <Users />
           </Route>
         </Switch>
       </div>

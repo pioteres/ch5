@@ -100,3 +100,22 @@ button {
 .menu-active {
   color: red;
 }
+
+.users-list ul {
+  list-style: none;
+  text-align: left;
+  background-color: lightsalmon;
+  margin: 0;
+  padding: 0;
+}
+
+.users-list li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.active-user {
+  background-color: red;
+}
+
+

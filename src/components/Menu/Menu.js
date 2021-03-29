@@ -16,6 +16,9 @@ const Menu = ({ state, handleClick }) => {
         <li>
           <NavLink to="/snackbar" activeClassName="menu-active">Snackbar</NavLink>
         </li>
+        <li>
+          <NavLink to="/users" activeClassName="menu-active">Users</NavLink>
+        </li>
       </ul>
     </div>
   );
