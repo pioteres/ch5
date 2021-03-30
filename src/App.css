@@ -105,8 +105,9 @@ button {
   list-style: none;
   text-align: left;
   background-color: lightsalmon;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 50vw;
 }
 
 .users-list li {
