@@ -1,6 +1,8 @@
 import { Button } from '../Button';
 import { NavLink } from 'react-router-dom';
 
+import './styles.scss';
+
 const Menu = ({ state, handleClick }) => {
   return (
     <div className="menu">

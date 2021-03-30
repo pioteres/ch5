@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { UsersList, User, UserSearch } from '.';
 import { Switch, Route, NavLink } from 'react-router-dom';
 
+import './styles.scss';
+
 const UsersContainer = () => {
   const [users, setUsers] = useState([]);
   const [usersFromApi, setUsersFromApi] = useState();

@@ -1,3 +1,5 @@
+import './styles.scss';
+
 const UsersList = ({ users, handleSetUser, activeElem }) => {
   return (
     <div className="users-list">

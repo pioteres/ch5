@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import './styles.scss';
 
 const Snackbar = ({ time, setActive, children, position, type }) => {
   let top;
@@ -18,7 +19,6 @@ const Snackbar = ({ time, setActive, children, position, type }) => {
       background = '#2196f3';
       break;
     default:
-
   }
 
   switch (position) {
@@ -67,11 +67,9 @@ const Snackbar = ({ time, setActive, children, position, type }) => {
   }, [setActive, time]);
 
   return (
-
-      <div className="snackbar" style={styles}>
-        <p>{children}</p>
-      </div>
-
+    <div className="snackbar" style={styles}>
+      <p>{children}</p>
+    </div>
   );
 };
 

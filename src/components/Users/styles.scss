@@ -1,0 +1,17 @@
+.users-list {
+  ul {
+    list-style: none;
+    text-align: left;
+    background-color: lightsalmon;
+    margin: 0 auto;
+    padding: 0;
+    width: 50vw;
+  }
+  li {
+    padding: 5px 10px;
+    cursor: pointer;
+    &.active-user {
+      background-color: red;
+    }
+  }
+}
